@@ -17,41 +17,66 @@ For example, using figures in July 2008:
   - this compares with an actual exchange rate of $2.00 to £1 at the time
   - (2.00 – 1.56) / 1.56 = 28%
   - the pound was thus overvalued against the dollar by 28%
+
+  Challenge
+Instead of outputting the index, can you output a boolean that compares two indices that you previously calculated?
+Do this for each index you've created before.
+
+Challenge 2
+No one likes to look at just numbers! Could you find a way to include useful text in each output?
+Use your Google-Fu to find a way to include some useful information to each of the values you're logging!
 */
 
+
+
 let bigMacPriceUS = 5.66
+
+// Britain
+let bigMacPriceBritain = 3.19
+let ippBritain = bigMacPriceUS/bigMacPriceBritain
+let ERBritain = 1.39
+let BMIBritain = (ERBritain - ippBritain)/ ippBritain
+console.log("BMIBritain: " + BMIBritain)
+
+
+
 
 // SWEDEN
 let bigMacPriceSweden = 52.88
 let ippSweden = bigMacPriceUS/bigMacPriceSweden
 let ERSweden = 0.12
-let BMISweden = (ERSweden - ippSweden)/ ippSweden
-console.log(BMISweden)
+let BMISweden = (ERSweden - ippSweden) / ippSweden // BMI = Big Mac Index
+console.log("BMISweden: " + BMISweden)
+console.log("Is the BMI less than the British BMI? - " + BMISweden < BMIBritain )
 
 // NORWAY
 let bigMacPriceNorway = 52
 let ippNorway = bigMacPriceUS/bigMacPriceNorway
 let ERNorway = 0.12
 let BMINorway = (ERNorway - ippNorway)/ ippNorway
-console.log(BMINorway)
+console.log("BMINorway: " + BMINorway)
+console.log("Is the BMI less than the British BMI? - " + BMINorway < BMIBritain )
 
 // ISRAEL
 let bigMacPriceIsrael = 17
 let ippIsrael = bigMacPriceUS/bigMacPriceIsrael
 let ERIsrael = 0.31
 let BMIIsrael = (ERIsrael - ippIsrael)/ ippIsrael
-console.log(BMIIsrael)
+console.log("BMIIsrael" + BMIIsrael)
+console.log("Is the BMI less than the British BMI? - " + BMIIsrael < BMIBritain )
 
 // CANADA
 let bigMacPriceCanada = 6.77
 let ippCanada = bigMacPriceUS/bigMacPriceCanada
 let ERCanada = 0.8
 let BMICanada = (ERCanada - ippCanada)/ ippCanada
-console.log(BMICanada)
+console.log("BMICanada" + BMICanada)
+console.log("Is the BMI less than the British BMI? - " + BMICanada < BMIBritain )
 
 // SWITZERLAND
 let bigMacPriceSwitzerland = 6.50
-let ippSwitxerland = bigMacPriceUS/bigMacPriceSwitzerland
+let ippSwitzerland = bigMacPriceUS/bigMacPriceSwitzerland
 let ERSwitzerland = 1.09
 let BMISwitzerland = (ERSwitzerland - ippSwitzerland)/ ippSwitzerland
-console.log(BMISwitzerland)
+console.log("BMISwitzerland" + BMISwitzerland)
+console.log("Is the BMI less than the British BMI? - " + BMISwitzerland < BMIBritain )
