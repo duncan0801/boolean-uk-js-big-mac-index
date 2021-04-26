@@ -35,8 +35,8 @@ let bigMacPriceUS = 5.66
 let bigMacPriceBritain = 3.19
 let ippBritain = bigMacPriceUS/bigMacPriceBritain
 let ERBritain = 1.39
-let BMIBritain = (ERBritain - ippBritain)/ ippBritain
-console.log("BMIBritain: " + BMIBritain)
+let BMIBritain = (((ERBritain - ippBritain)/ ippBritain)*100).toFixed(2)
+console.log("BMIBritain: " + BMIBritain + "%")
 
 
 
@@ -45,38 +45,38 @@ console.log("BMIBritain: " + BMIBritain)
 let bigMacPriceSweden = 52.88
 let ippSweden = bigMacPriceUS/bigMacPriceSweden
 let ERSweden = 0.12
-let BMISweden = (ERSweden - ippSweden) / ippSweden // BMI = Big Mac Index
-console.log("BMISweden: " + BMISweden)
-console.log("Is the BMI less than the British BMI? - " + BMISweden < BMIBritain )
+let BMISweden = (((ERSweden - ippSweden) / ippSweden)*100).toFixed(2) // BMI = Big Mac Index
+console.log("BMISweden: " + BMISweden + "%")
+console.log("The BMI of Sweden is less than the British BMI? - " + (BMISweden < BMIBritain) )
 
 // NORWAY
 let bigMacPriceNorway = 52
 let ippNorway = bigMacPriceUS/bigMacPriceNorway
 let ERNorway = 0.12
-let BMINorway = (ERNorway - ippNorway)/ ippNorway
-console.log("BMINorway: " + BMINorway)
-console.log("Is the BMI less than the British BMI? - " + BMINorway < BMIBritain )
+let BMINorway = (((ERNorway - ippNorway)/ ippNorway)*100).toFixed(2)
+console.log("BMINorway: " + BMINorway + "%")
+console.log("The BMI of Norway is less than the British BMI? - " + (BMINorway < BMIBritain) )
 
 // ISRAEL
 let bigMacPriceIsrael = 17
 let ippIsrael = bigMacPriceUS/bigMacPriceIsrael
 let ERIsrael = 0.31
-let BMIIsrael = (ERIsrael - ippIsrael)/ ippIsrael
-console.log("BMIIsrael" + BMIIsrael)
-console.log("Is the BMI less than the British BMI? - " + BMIIsrael < BMIBritain )
+let BMIIsrael = (((ERIsrael - ippIsrael)/ ippIsrael)*100).toFixed(2)
+console.log("BMIIsrael: " + BMIIsrael + "%")
+console.log("Is the BMI of Israel less than the British BMI? - " + (BMIIsrael < BMIBritain))
 
 // CANADA
 let bigMacPriceCanada = 6.77
 let ippCanada = bigMacPriceUS/bigMacPriceCanada
 let ERCanada = 0.8
-let BMICanada = (ERCanada - ippCanada)/ ippCanada
-console.log("BMICanada" + BMICanada)
-console.log("Is the BMI less than the British BMI? - " + BMICanada < BMIBritain )
+let BMICanada = (((ERCanada - ippCanada)/ ippCanada)*100).toFixed(2)
+console.log("BMICanada: " + BMICanada + "%")
+console.log("The BMI of Canada is less than the British BMI? - " + (BMICanada < BMIBritain ))
 
 // SWITZERLAND
 let bigMacPriceSwitzerland = 6.50
 let ippSwitzerland = bigMacPriceUS/bigMacPriceSwitzerland
 let ERSwitzerland = 1.09
-let BMISwitzerland = (ERSwitzerland - ippSwitzerland)/ ippSwitzerland
-console.log("BMISwitzerland" + BMISwitzerland)
-console.log("Is the BMI less than the British BMI? - " + BMISwitzerland < BMIBritain )
+let BMISwitzerland = (((ERSwitzerland - ippSwitzerland)/ ippSwitzerland)*100).toFixed(2)
+console.log("BMISwitzerland: " + BMISwitzerland + "%")
+console.log("The BMI of Switzerland is less than the British BMI? - " + (BMISwitzerland < BMIBritain) )
