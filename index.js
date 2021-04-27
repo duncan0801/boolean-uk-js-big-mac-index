@@ -44,8 +44,8 @@ console.log("BMIBritain: " + BMIBritain + "%")
 // SWEDEN
 let bigMacPriceSweden = 52.88
 let ippSweden = bigMacPriceUS/bigMacPriceSweden
-let ERSweden = 0.12
-let BMISweden = (((ERSweden - ippSweden) / ippSweden)*100).toFixed(2) // BMI = Big Mac Index
+let ERSweden = 0.12                                                     //ER = Exchange Rate        
+let BMISweden = (((ERSweden - ippSweden) / ippSweden)*100).toFixed(2)   // BMI = Big Mac Index
 console.log("BMISweden: " + BMISweden + "%")
 console.log("The BMI of Sweden is less than the British BMI? - " + (BMISweden < BMIBritain) )
 
